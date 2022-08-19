@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Please open the console or click the button below if you want to change the names!</h1>
+    <br>
+    <br>
+    <ol id="idOlOutput"></ol>
+    <br>
+    <br>
+    <h3>Choose a number, put the new name and press change!</h3>
+    <label for="">Number</label>
+    <input type="number" id="idNr" name="nr">
+    <br> <br>
+    <label for="">Name</label>
+    <input type="text" id="idName" name="nm">
+    <button
+        onclick="aendereHundeNamen(document.getElementById('idNr').value, document.getElementById('idName').value)">change</button>
+    <button onclick="showDogs()">Show</button>
+    <button onclick="macheAenderungenRueckgaengig()">Reset changes</button>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
